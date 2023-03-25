@@ -1,0 +1,61 @@
+/* Style the section */
+.marvel-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* this will prevent the container from collapsing when there is no content */
+}
+
+/* Style the heading */
+h1 {
+  color: red;
+  font-size: 72px;
+  text-align: center;
+}
+
+/* Style the heading 2 */
+h2 {
+  color: red;
+  font-size: 36px;
+  text-align: center;
+}
+
+/* Style the container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Style the character card */
+.marvel__characters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(33.33% - 40px); /* adjust as necessary */
+  margin: 20px;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Style the character image */
+.marvel__character__img {
+  flex-shrink: 0; /* prevents the image from shrinking */
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* crops the image if necessary */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Style the character name */
+.marvel__character__name {
+  font-size: 24px;
+  margin: 10px;
+}
+
+/* Style the character description */
+.marvel__character__description {
+  margin: 10px;
+}
